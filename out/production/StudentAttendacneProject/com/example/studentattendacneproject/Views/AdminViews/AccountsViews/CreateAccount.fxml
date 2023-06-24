@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="createAccountPane" prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendacneproject.Controllers.AdminControllers.AccountsControllers.CreateAccountController">
+   <children>
+      <Button fx:id="butBack" layoutX="96.0" layoutY="293.0" mnemonicParsing="false" onAction="#onBack" prefHeight="32.0" prefWidth="74.0" text="Back">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="butCreate" layoutX="181.0" layoutY="293.0" mnemonicParsing="false" onAction="#onCreate" prefHeight="32.0" prefWidth="74.0" text="Create">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="52.0" layoutY="92.0" prefHeight="43.0" prefWidth="247.0" text="Create Account">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="163.0" prefHeight="32.0" prefWidth="85.0" text="Username">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="121.0" layoutY="167.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="27.0" layoutY="210.0" prefHeight="32.0" prefWidth="85.0" text="Password">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="122.0" layoutY="214.0" prefHeight="25.0" prefWidth="202.0" />
+   </children>
+</AnchorPane>

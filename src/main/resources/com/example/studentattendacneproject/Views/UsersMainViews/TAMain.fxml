@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendacneproject.Controllers.TAMainController">
+   <children>
+      <Accordion layoutX="90.0" layoutY="95.0" />
+      <TabPane fx:id="TAMainPane" prefHeight="400.0" prefWidth="350.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Lectures">
+               <content>
+                  <AnchorPane fx:id="lecturesPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="butLogOut" layoutX="282.0" layoutY="339.0" mnemonicParsing="false" onAction="#onLogOut" text="Log Out" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="11.0">
+                           <font>
+                              <Font name="Times New Roman" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butAddLecture" layoutX="61.0" layoutY="42.0" mnemonicParsing="false" onAction="#onAddLecture" prefHeight="35.0" prefWidth="229.0" text="Add Lecture">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butEditLecture" layoutX="60.0" layoutY="100.0" mnemonicParsing="false" onAction="#onEditLecture" prefHeight="35.0" prefWidth="229.0" text="Edit Lecture">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butDeleteLecture" layoutX="60.0" layoutY="158.0" mnemonicParsing="false" onAction="#onDeleteLecture" prefHeight="35.0" prefWidth="229.0" text="Delete Lecture">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butShowLectures" layoutX="60.0" layoutY="216.0" mnemonicParsing="false" onAction="#onShowLectures" prefHeight="35.0" prefWidth="229.0" text="Show Lectures">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butShowLectureAttendance" layoutX="61.0" layoutY="273.0" mnemonicParsing="false" onAction="#onShowLectureAttendance" prefHeight="35.0" prefWidth="229.0" text="Show Lecture Attendance">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Students">
+               <content>
+                  <AnchorPane fx:id="studentsPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="butLogOut" layoutX="283.0" layoutY="338.0" mnemonicParsing="false" onAction="#onLogOut" text="Log Out" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="10.0">
+                           <font>
+                              <Font name="Times New Roman" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butAddStudent" layoutX="61.0" layoutY="61.0" mnemonicParsing="false" onAction="#onAddStudent" prefHeight="35.0" prefWidth="229.0" text="Add Student">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butEditStudent" layoutX="60.0" layoutY="116.0" mnemonicParsing="false" onAction="#onEditStudent" prefHeight="35.0" prefWidth="229.0" text="Edit Student">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butDeleteStudent" layoutX="60.0" layoutY="170.0" mnemonicParsing="false" onAction="#onDeleteStudent" prefHeight="35.0" prefWidth="229.0" text="Delete Student">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butShowStudentAttendance" layoutX="61.0" layoutY="276.0" mnemonicParsing="false" onAction="#onShowStudentAttendance" prefHeight="35.0" prefWidth="229.0" text="Show Student Attendance">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butJoinCourse" layoutX="60.0" layoutY="223.0" mnemonicParsing="false" onAction="#onJoinCourse" prefHeight="35.0" prefWidth="229.0" text="Join Course">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Attendance">
+              <content>
+                <AnchorPane fx:id="attendancePane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="butAddAttendance" layoutX="61.0" layoutY="137.0" mnemonicParsing="false" onAction="#onAddAttendance" prefHeight="35.0" prefWidth="229.0" text="Add Attendance">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butDeleteAttendance" layoutX="61.0" layoutY="197.0" mnemonicParsing="false" onAction="#onDeleteAttendance" prefHeight="35.0" prefWidth="229.0" text="Delete Attendance">
+                           <font>
+                              <Font name="Times New Roman" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="butLogOut" layoutX="282.0" layoutY="338.0" mnemonicParsing="false" onAction="#onLogOut" text="Log Out">
+                           <font>
+                              <Font name="Times New Roman" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

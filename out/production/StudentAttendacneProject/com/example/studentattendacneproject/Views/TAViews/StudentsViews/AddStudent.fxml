@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addStudentPane" prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentattendacneproject.Controllers.TAControllers.StudentsControllers.AddStudentController">
+   <children>
+      <Button fx:id="butBack" layoutX="97.0" layoutY="327.0" mnemonicParsing="false" onAction="#onBack" prefHeight="32.0" prefWidth="74.0" text="Back">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="butAdd" layoutX="181.0" layoutY="327.0" mnemonicParsing="false" onAction="#onAdd" prefHeight="32.0" prefWidth="74.0" text="Add">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="52.0" layoutY="48.0" prefHeight="43.0" prefWidth="247.0" text="Add Student">
+         <font>
+            <Font name="Times New Roman" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="192.0" prefHeight="32.0" prefWidth="85.0" text="Student ID">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="126.0" layoutY="196.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="22.0" layoutY="111.0" prefHeight="32.0" prefWidth="74.0" text="1st Name">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fName" layoutX="92.0" layoutY="115.0" prefHeight="25.0" prefWidth="74.0" />
+      <Label layoutX="182.0" layoutY="112.0" prefHeight="32.0" prefWidth="74.0" text="2nd Name">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="secName" layoutX="253.0" layoutY="116.0" prefHeight="25.0" prefWidth="74.0" />
+      <Label layoutX="22.0" layoutY="148.0" prefHeight="32.0" prefWidth="74.0" text="3rd Name">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="thName" layoutX="92.0" layoutY="152.0" prefHeight="25.0" prefWidth="74.0" />
+      <Label layoutX="182.0" layoutY="149.0" prefHeight="32.0" prefWidth="74.0" text="4th Name">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="foName" layoutX="253.0" layoutY="153.0" prefHeight="25.0" prefWidth="74.0" />
+      <Label layoutX="22.0" layoutY="231.0" prefHeight="32.0" prefWidth="85.0" text="Phone Num">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNum" layoutX="126.0" layoutY="235.0" prefHeight="25.0" prefWidth="202.0" />
+      <Label layoutX="22.0" layoutY="271.0" prefHeight="32.0" prefWidth="85.0" text="Address">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="126.0" layoutY="275.0" prefHeight="25.0" prefWidth="202.0" />
+   </children>
+</AnchorPane>
